@@ -32,7 +32,8 @@ def code_request():
     print(sentence)
     completion = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
-        prompt=[{"text": sentence}],
+        messages=[{"role": "user", "content": sentence}]
+
     )
 
     return completion['choices'][0]['sentence']['content']
