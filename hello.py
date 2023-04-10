@@ -22,8 +22,8 @@ def chatgpt():
     )
     return completion['choices'][0]['message']['content']
 
-
-@app.route('/generate-code')
+#New 
+@app.route('/code_request')
 def code_request():
     args= request.args
     code = args.get("code")
@@ -35,5 +35,4 @@ def code_request():
         messages=[{"role": "user", "content": sentence}]
 
     )
-
     return completion['choices'][0]['sentence']['content']
