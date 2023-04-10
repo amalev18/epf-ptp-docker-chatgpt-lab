@@ -11,7 +11,7 @@ WORKDIR /epf-ptp-docker-chatgpt-lab
 RUN pip install -r requirements.txt
 
 #Set the environmental variable based on the secret key
-ENV OPENAI_KEY=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
+ENV OPENAI_KEY=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
 
 #Exposing the port
 EXPOSE 5000
