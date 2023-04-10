@@ -16,7 +16,7 @@ ENV OPENAI_KEY=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
 #Exposing the port
 EXPOSE 5000
 
-CMD ["flask","--app", "hello", "run", "--host=0.0.0.0"] 
+CMD ["flask","--app", "hello", "run", "--host=0.0.0.0", "--port=5001"] 
 
 
 
