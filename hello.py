@@ -34,4 +34,4 @@ def code_request():
         messages=[{"role": "user", "content": message}]
 
     )
-    return completion['choices'][0]['sentence']['content']
+    return completion['choices'][0]['message']['content']
